@@ -1,0 +1,132 @@
+.profile-section h2 {
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.75rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-md);
+}
+
+.profile-content {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.profile-details-card .profile-info-item,
+.profile-bio-card #bio-display-section p {
+  margin-bottom: var(--spacing-md);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.profile-details-card .profile-info-item strong {
+  min-width: 120px; /* Adjust as needed for alignment */
+  display: inline-block;
+  color: var(--text-muted-color);
+}
+
+.profile-details-card .profile-info-item button,
+.profile-bio-card #bio-display-section button {
+  margin-left: var(--spacing-md);
+  vertical-align: middle;
+}
+
+.form-section {
+  margin-top: var(--spacing-sm);
+}
+
+.form-section .form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-section textarea {
+  width: 100%;
+  padding: var(--input-padding-y) var(--input-padding-x);
+  font-family: var(--font-family-base);
+  font-size: var(--input-font-size);
+  color: var(--input-color);
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  transition: border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+  resize: vertical;
+  min-height: 100px;
+}
+.form-section textarea:focus {
+  border-color: var(--primary-color);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(var(--primary-color-rgb), 0.25);
+}
+
+.form-section button {
+  margin-right: var(--spacing-sm);
+}
+.form-section button:last-child {
+  margin-right: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.profile-image-card .profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.profile-image-display {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border-color);
+  background-color: var(--secondary-color); /* Placeholder bg */
+}
+
+#profileImageForm .form-group {
+  margin-bottom: var(--spacing-sm);
+}
+#profileImageForm input[type='file'] {
+  display: block; /* Or adjust styling as needed */
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  background-color: var(--input-bg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.profile-delete-account-card {
+  border-color: var(--danger-border-color) !important; /* Make it stand out */
+  background-color: var(--danger-bg-subtle) !important;
+}
+
+.profile-delete-account-card h3 {
+  color: var(--danger-text-color) !important;
+}
+
+.profile-delete-account-card .warning-text {
+  color: var(--danger-text-color);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-md);
+  font-weight: var(--font-weight-medium);
+}
+
+#deleteAccountForm .btn-danger {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+  color: #fff;
+  width: 100%;
+}
+
+#deleteAccountForm .btn-danger:hover {
+  background-color: var(--danger-hover-color);
+  border-color: var(--danger-hover-color);
+}
+
+@media (min-width: 768px) {
+  .profile-content {
+    grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+  }
+}

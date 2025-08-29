@@ -1,0 +1,7 @@
+﻿/backend/vendor
+/vendor
+.env
+*.env
+node_modules
+.DS_Store
+pw2425-main/
